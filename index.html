@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glassmorfismo Card</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <ul class="thumb">
+      <li onmouseover="changeImageSrc('img/shoes1.png')"><img src="img/shoes1.png"></li>
+      <li onmouseover="changeImageSrc('img/shoes2.png')"><img src="img/shoes2.png"></li>
+      <li onmouseover="changeImageSrc('img/shoes3.png')"><img src="img/shoes3.png"></li>
+    </ul>
+    <div class="imgBox">
+      <h2>Nike Air Zoom</h2>
+      <img src="img/shoes1.png" class="shoesss">
+      <ul class="size">
+        <span>Tamanho</span>
+        <li>38</li>
+        <li>40</li>
+        <li>41</li>
+        <li>43</li>
+      </ul>
+      <a href="#" class="btn">Adicionar ao Carrrinho</a>
+    </div>
+  </div> 
+  <script>
+    function changeImageSrc(anything){
+      document.querySelector('.shoesss').src = anything;
+    }
+  </script>
+</body>
+</html>
